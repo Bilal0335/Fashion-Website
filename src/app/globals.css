@@ -31,3 +31,15 @@ body {
     text-wrap: balance;
   }
 } */
+
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.text-shadow {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.drop-shadow-custom {
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.3));
+}
