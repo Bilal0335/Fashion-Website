@@ -10,7 +10,7 @@ const menuItems = [
 
 const Menu = () => {
   return (
-    <ul>
+    <ul className="flex space-x-8 font-medium">
       {menuItems.map((item, index) => (
         <li key={index}>
           {item.isButton ? (
