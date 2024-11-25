@@ -23,25 +23,25 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-black py-8 px-6 sm:px-8 lg:px-10">
+    <footer className="bg-black text-white h-auto p-5">
       <Wrapper>
-        <div className="container mx-auto max-w-screen-lg flex justify-between items-start">
-          {/* first box */}
-          <div className="flex-1">
-            <h3 className="mb-4 text-xl font-extrabold leading-7 text-white">FASHION</h3>
-            <p className="text-white">
+        {/* Main div */}
+        <div className="mb-10 mt-10 flex justify-between">
+          {/* Box 1 */}
+          <div>
+            <h1 className="text-[#FFFFFF] text-[2.5rem] font-extrabold py-1">
+              FASHION
+            </h1>
+            <p className="text-[#8E8E8E] max-w-[80%] tracking-wider py-3 ">
               Complete your style with awesome clothes from us.
             </p>
             <SocialLinks />
           </div>
-
-          {/* center space (empty) */}
-          <div className="flex-1"></div>
-
-          {/* second box */}
-          <div className="flex gap-x-24 justify-start p-7 bg-red-300">
+          {/* Box 2 */}
+          <div className="flex justify-between gap-10">
+            {/* Company Links */}
             <div>
-              <h3 className="mb-4 text-xl font-extrabold leading-7 text-white uppercase">
+              <h3 className="mb-4 text-md font-semibold leading-7 text-[#D9D9D9] capitalize">
                 company
               </h3>
               <ul className="space-y-2">
@@ -52,26 +52,28 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
+            {/* Quick Links */}
             <div>
-              <h3 className="mb-4 text-xl font-extrabold leading-7 text-white uppercase">
+              <h3 className="mb-4 text-md font-semibold leading-7 text-[#D9D9D9] capitalize">
                 quick link
               </h3>
               <ul className="space-y-2">
-                {quick.map((quick, index) => (
-                  <ListItem key={index} href={quick.href}>
-                    {quick.title}
+                {quick.map((item, index) => (
+                  <ListItem key={index} href={item.href}>
+                    {item.title}
                   </ListItem>
                 ))}
               </ul>
             </div>
+            {/* Legal Links */}
             <div>
-              <h3 className="mb-4 text-xl font-extrabold leading-7 text-white uppercase">
+              <h3 className="mb-4 text-md font-semibold leading-7 text-[#D9D9D9] capitalize">
                 legal
               </h3>
               <ul className="space-y-2">
-                {legal.map((legal, index) => (
-                  <ListItem key={index} href={legal.href}>
-                    {legal.title}
+                {legal.map((item, index) => (
+                  <ListItem key={index} href={item.href}>
+                    {item.title}
                   </ListItem>
                 ))}
               </ul>

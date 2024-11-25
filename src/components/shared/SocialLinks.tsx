@@ -35,7 +35,7 @@ const SocialLinks = () => {
       {socialLinks.map(({ href, icon, color }, index) => (
         <Link href={href} key={index} target="_blank">
           <div
-            className={`w-6 h-6 text-black justify-center items-center rounded-md flex ${color}`}
+            className={`w-8 h-8 text-black justify-center items-center rounded-lg flex ${color}`}
           >
             {icon}
           </div>

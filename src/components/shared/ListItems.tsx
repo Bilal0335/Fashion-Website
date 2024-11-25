@@ -7,12 +7,11 @@ interface ListItemProps {
 
 const ListItem: React.FC<ListItemProps> = ({ href, children }) => {
   return (
-    <div>
-      <Link href={href}>
-        {/* Use <a> inside <Link> */}
-        <li className="py-1 text-white">{children}</li>
+    <li className="py-1">
+      <Link href={href} className="text-[#8E8E8E] hover:text-white">
+        {children}
       </Link>
-    </div>
+    </li>
   );
 };
 
