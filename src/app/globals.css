@@ -32,14 +32,27 @@ body {
   }
 } */
 
-.box-shadow {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
-.text-shadow {
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
-}
-
-.drop-shadow-custom {
-  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.3));
+@layer components {
+  .box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  .text-shadow {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  }
+  .drop-shadow-custom {
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.3));
+  }
+  /*  */
+  .custom-rotate {
+    transform: rotate(-10deg);
+    display: inline-block; /* Ensures rotation applies correctly */
+    padding: 5px 10px; /* Adjust padding for better fit */
+    background-color: #ebd96b; /* Background color */
+    white-space: nowrap; /* Prevents text wrapping */
+    width: fit-content; /* Ensures the width matches the content */
+    box-sizing: border-box; /* Includes padding in width calculation */
+    text-align: center; /* Centers text within the background */
+    overflow: hidden; /* Ensures no visual overflow */
+  }
 }

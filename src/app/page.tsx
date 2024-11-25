@@ -1,3 +1,8 @@
+import Hero from "@/components/widgets/Hero";
+
 export default function Home() {
-  return <h1>bilal</h1>;
+  return(
+    // Hero Page 
+   <Hero /> 
+  );
 }
