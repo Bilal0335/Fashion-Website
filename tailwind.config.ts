@@ -1,19 +1,28 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}'
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        'icons-color': '#EBD96B'
-      }
-    }
+        "icons-color": "#EBD96B", // Custom color for icons
+      },
+      keyframes: {
+        slider: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        slider: "slider 10s linear infinite", // Smooth animation for slider
+      },
+    },
   },
-  plugins: []
-}
+  plugins: [],
+};
 
-export default config
+export default config;

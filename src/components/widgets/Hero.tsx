@@ -2,7 +2,8 @@ import React from "react";
 import Wrapper from "../shared/Wrapper";
 import Button from "../shared/Button";
 import Image from "next/image";
-import HeroImage from "@/assets/image/hero_img.png"; // Rename the image import
+import HeroImage from "@/assets/image/hero_img.png";
+import LogoSlider from "../shared/LogoSlider";
 
 const Hero = () => {
   return (
@@ -36,6 +37,9 @@ const Hero = () => {
           </div>
         </div>
       </Wrapper>
+      <main className="bg-[#EBD96B] mb-1">
+        <LogoSlider />
+      </main>
     </section>
   );
 };

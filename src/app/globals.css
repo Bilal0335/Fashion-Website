@@ -55,4 +55,15 @@ body {
     text-align: center; /* Centers text within the background */
     overflow: hidden; /* Ensures no visual overflow */
   }
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+  }
+
+  .icon-container img {
+    object-fit: contain;
+  }
 }
