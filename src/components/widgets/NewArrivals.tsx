@@ -16,14 +16,13 @@ const ArrivalItem = ({
   title: string;
   subtitle: string;
 }) => (
-  <div className="w-[90%] px-4 mb-5">
+  <div className=" p-4 mb-5">
     {/* Image Section */}
     <Image
       src={imageSrc}
       alt={title}
       className="object-cover"
-      width={250}
-      height={250}
+     
     />
     {/* Text and Icon Section */}
     <div className="flex justify-between items-center mt-2">
@@ -33,7 +32,7 @@ const ArrivalItem = ({
         <h5 className="text-sm text-gray-400">{subtitle}</h5>
       </div>
       {/* Icon */}
-      <GoArrowRight className="flex items-center justify-center mr-[100px]" />
+      <GoArrowRight className="flex items-center justify-center" />
     </div>
   </div>
 );
@@ -57,7 +56,7 @@ const NewArrivals = () => {
           New Arrivals
         </h1>
         {/* Container for Items */}
-        <div className="flex justify-start items-center mb-[100px]">
+        <div className="flex justify-start items-center mb-[30px]">
           {arrivalData.map((item, index) => (
             <ArrivalItem
               key={index}
