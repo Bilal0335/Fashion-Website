@@ -33,7 +33,7 @@ const ArrivalItem = ({
         <h5 className="text-sm text-gray-400">{subtitle}</h5>
       </div>
       {/* Icon */}
-      <GoArrowRight className="flex items-center justify-center mr-[50px]" />
+      <GoArrowRight className="flex items-center justify-center mr-[100px]" />
     </div>
   </div>
 );
