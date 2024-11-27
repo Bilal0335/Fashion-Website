@@ -6,7 +6,7 @@ import Arrival3 from "@/assets/image/arrival3.png";
 import Image, { StaticImageData } from "next/image";
 import { GoArrowRight } from "react-icons/go";
 
-// Component for individual items
+// Reusable ArrivalItem Component
 const ArrivalItem = ({
   imageSrc,
   title,
@@ -16,14 +16,9 @@ const ArrivalItem = ({
   title: string;
   subtitle: string;
 }) => (
-  <div className=" p-4 mb-5">
+  <div className="p-4">
     {/* Image Section */}
-    <Image
-      src={imageSrc}
-      alt={title}
-      className="object-cover"
-     
-    />
+    <Image src={imageSrc} alt={title} className="object-cover w-full" />
     {/* Text and Icon Section */}
     <div className="flex justify-between items-center mt-2">
       {/* Text */}
@@ -37,6 +32,7 @@ const ArrivalItem = ({
   </div>
 );
 
+// Main NewArrivals Component
 const NewArrivals = () => {
   // Data for the arrival items
   const arrivalData = [
@@ -46,7 +42,7 @@ const NewArrivals = () => {
       subtitle: "Explore Now!"
     },
     { image: Arrival2, title: "Coats & Parkas", subtitle: "Explore Now!" },
-    { image: Arrival3, title: "Tees & T-Shirt", subtitle: "Explore Now!" }
+    { image: Arrival3, title: "Tees & T-Shirts", subtitle: "Explore Now!" }
   ];
 
   return (
@@ -55,8 +51,8 @@ const NewArrivals = () => {
         <h1 className="text-3xl font-black leading-[2] py-5 text-left ml-4 mb-4">
           New Arrivals
         </h1>
-        {/* Container for Items */}
-        <div className="flex justify-start items-center mb-[30px]">
+        {/* Grid Layout for Items */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {arrivalData.map((item, index) => (
             <ArrivalItem
               key={index}

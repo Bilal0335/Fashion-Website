@@ -25,7 +25,7 @@ const YoungLife = () => {
           <h1 className="text-3xl font-black leading-[2] py-5 text-left ml-4 mb-4">
             Young’s Favourite
           </h1>
-          <div className="flex justify-center items-center space-x-6 m-auto mb-7">
+          <div className="grid grid-cols-1 items-center sm:grid-cols-2 md:grid-cols-2 gap-4 m-auto mb-7">
             {younLife.map((item, index) => (
               <div key={index}>
                 <Image
@@ -36,8 +36,10 @@ const YoungLife = () => {
                 <div className="flex justify-between items-center mt-2">
                   {/* Text */}
                   <div className="flex flex-col items-start">
-                    <h4 className="font-bold">{item.title}</h4>
-                    <h5 className="text-sm text-gray-400">{item.subtitle}</h5>
+                    <h4 className="font-bold ml-2">{item.title}</h4>
+                    <h5 className="text-sm ml-2 text-gray-400">
+                      {item.subtitle}
+                    </h5>
                   </div>
                   {/* Icon */}
                   <GoArrowRight />
