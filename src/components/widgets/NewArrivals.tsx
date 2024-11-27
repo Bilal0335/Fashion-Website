@@ -53,11 +53,11 @@ const NewArrivals = () => {
   return (
     <div>
       <Wrapper>
-        <h1 className="text-3xl font-black leading-[1.3] py-2 text-left">
+        <h1 className="text-3xl font-black leading-[2] py-5 text-left ml-4 mb-4">
           New Arrivals
         </h1>
         {/* Container for Items */}
-        <div className="flex justify-start items-center">
+        <div className="flex justify-start items-center mb-[100px]">
           {arrivalData.map((item, index) => (
             <ArrivalItem
               key={index}
