@@ -23,7 +23,7 @@ const ArrivalItem = ({
     <div className="flex justify-between items-center mt-2">
       {/* Text */}
       <div className="flex flex-col items-start">
-        <h4 className="font-bold">{title}</h4>
+        <h4 className="font-bolnpm rund">{title}</h4>
         <h5 className="text-sm text-gray-400">{subtitle}</h5>
       </div>
       {/* Icon */}

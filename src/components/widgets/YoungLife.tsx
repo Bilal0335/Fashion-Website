@@ -25,7 +25,7 @@ const YoungLife = () => {
           <h1 className="text-3xl font-black leading-[2] py-5 text-left ml-4 mb-4">
             Young’s Favourite
           </h1>
-          <div className="grid grid-cols-1 items-center sm:grid-cols-2 md:grid-cols-2 gap-4 m-auto mb-7">
+          <div className="grid grid-cols-1 items-center sm:grid-cols-2 md:grid-cols-2 gap-4 m-auto mb-7 mt-2">
             {younLife.map((item, index) => (
               <div key={index}>
                 <Image
